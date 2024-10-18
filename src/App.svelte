@@ -37,7 +37,7 @@
 
     function tickGame(dt: number): void {
         game.update(g => {
-            g.time += dt;
+            g.time += (dt**3);
 
             const effectiveTime = g.time * (g.infinities + 1);
             
